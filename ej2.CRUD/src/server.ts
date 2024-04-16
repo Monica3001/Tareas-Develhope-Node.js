@@ -2,10 +2,8 @@ import express from "express";
 import dotenv from 'dotenv'
 import "express-async-errors";
 import morgan from "morgan";
-import joi from 'Joi'
 
 const app = express();
-const Joi = require('joi');
 
 app.use(morgan("dev"));
 app.use(express.json());

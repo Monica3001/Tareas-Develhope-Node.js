@@ -34,7 +34,7 @@ app.get("/api/planets/:id", (req, res) => {
 
 app.post("/api/planets", (req, res) => {
   const { id, name } = req.body;
-  const newPlanet = { id, name };
+  const newPlanet = { id: id, name };
   planets = [...planets, newPlanet];
 
   console.log(planets);

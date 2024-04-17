@@ -2,11 +2,10 @@ import express from "express";
 import dotenv from 'dotenv'
 import "express-async-errors";
 import morgan from "morgan";
-import joi from 'Joi'
+
 import {getAll, getOneById, createPost, updateById, deleteById }from "./controllers/planets.js";
 
 const app = express();
-
 
 app.use(morgan("dev"));
 app.use(express.json());

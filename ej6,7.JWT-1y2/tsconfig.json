@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "./dist",
+    "module": "es6",
+    "target": "ES6",
+    "noImplicitAny": false
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./src/**/*.test.js"]
+}
